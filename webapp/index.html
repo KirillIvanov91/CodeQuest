@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeQuest — Telegram Mini App</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>CodeQuest</h1>
+      <p class="subtitle">Геймифицированная прокачка IT-навыков</p>
+    </header>
+
+    <section id="auth">
+      <button id="btn-verify">Войти через Telegram</button>
+      <div id="auth-status"></div>
+    </section>
+
+    <section id="directions" class="hidden">
+      <h2>Направления</h2>
+      <div id="dir-list" class="cards"></div>
+    </section>
+
+    <section id="tasks" class="hidden">
+      <h2 id="task-title">Задание</h2>
+      <pre id="task-statement"></pre>
+      <textarea id="code" rows="12" placeholder="// Напиши функцию здесь..."></textarea>
+      <div class="actions">
+        <button id="btn-submit">Проверить</button>
+        <button id="btn-back">Назад</button>
+      </div>
+      <pre id="task-result"></pre>
+    </section>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

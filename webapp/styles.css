@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: #0f1222; color: #f0f3ff; }
+header { padding: 20px; text-align: center; background: #15183a; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+h1 { margin: 0; font-size: 28px; }
+.subtitle { margin: 6px 0 0; color: #95a0ff; }
+section { max-width: 900px; margin: 20px auto; padding: 16px; background: #15183a; border-radius: 16px; }
+.hidden { display: none; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.card { background: #1b1f4a; border-radius: 12px; padding: 12px; cursor: pointer; border: 1px solid transparent; }
+.card:hover { border-color: #6b7cff; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: #b6c0ff; font-size: 14px; }
+textarea#code { width: 100%; padding: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; background: #0f1222; color: #d9ddff; border: 1px solid #2a2e5a; border-radius: 8px; }
+pre { white-space: pre-wrap; background: #0f1222; padding: 12px; border-radius: 8px; border: 1px solid #2a2e5a; }
+.actions { display: flex; gap: 10px; margin-top: 10px; }
+button { background: #6b7cff; color: #fff; border: none; padding: 10px 14px; border-radius: 10px; cursor: pointer; }
+button:hover { background: #7f8cff; }
+#auth { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+#auth-status { font-size: 14px; color: #b6c0ff; }
