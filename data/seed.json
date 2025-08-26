@@ -1,0 +1,378 @@
+{
+  "directions": [
+    {
+      "id": 1,
+      "dkey": "js",
+      "title": "JavaScript",
+      "description": "Основы JS: строки, массивы, объекты, асинхронность",
+      "sort": 1
+    },
+    {
+      "id": 2,
+      "dkey": "git",
+      "title": "Git",
+      "description": "Контроль версий: коммиты, ветки и merge",
+      "sort": 2
+    },
+    {
+      "id": 3,
+      "dkey": "sql",
+      "title": "SQL",
+      "description": "Запросы, агрегаты, JOIN",
+      "sort": 3
+    },
+    {
+      "id": 4,
+      "dkey": "node",
+      "title": "Node.js",
+      "description": "HTTP-сервер и REST API",
+      "sort": 4
+    },
+    {
+      "id": 5,
+      "dkey": "react",
+      "title": "Frontend (React)",
+      "description": "Компоненты, состояние, события",
+      "sort": 5
+    }
+  ],
+  "levels": [
+    {
+      "id": 11,
+      "direction_id": 1,
+      "tier": 1,
+      "title": "Bronze",
+      "sort": 1
+    },
+    {
+      "id": 12,
+      "direction_id": 1,
+      "tier": 2,
+      "title": "Silver",
+      "sort": 2
+    },
+    {
+      "id": 13,
+      "direction_id": 1,
+      "tier": 3,
+      "title": "Gold",
+      "sort": 3
+    },
+    {
+      "id": 14,
+      "direction_id": 1,
+      "tier": 4,
+      "title": "Diamond",
+      "sort": 4
+    }
+  ],
+  "sublevels": [
+    {
+      "id": 101,
+      "level_id": 11,
+      "code": "1.1",
+      "title": "Циклы и строки",
+      "skills": [
+        "loops",
+        "strings"
+      ],
+      "sort": 1
+    },
+    {
+      "id": 102,
+      "level_id": 11,
+      "code": "1.2",
+      "title": "Массивы и условия",
+      "skills": [
+        "arrays",
+        "conditions"
+      ],
+      "sort": 2
+    },
+    {
+      "id": 201,
+      "level_id": 12,
+      "code": "2.1",
+      "title": "Дубликаты и сортировка",
+      "skills": [
+        "arrays",
+        "sort",
+        "set"
+      ],
+      "sort": 1
+    },
+    {
+      "id": 301,
+      "level_id": 13,
+      "code": "3.1",
+      "title": "Map/Filter/Reduce и объекты",
+      "skills": [
+        "map",
+        "filter",
+        "reduce",
+        "objects"
+      ],
+      "sort": 1
+    },
+    {
+      "id": 401,
+      "level_id": 14,
+      "code": "4.1",
+      "title": "Промисы и async/await",
+      "skills": [
+        "promises",
+        "async"
+      ],
+      "sort": 1
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1001,
+      "sublevel_id": 101,
+      "type": "coding",
+      "title": "reverseString(str)",
+      "statement": "Напиши функцию reverseString(str), которая возвращает строку задом наперёд.",
+      "examples": [
+        {
+          "in": "hello",
+          "out": "olleh"
+        }
+      ],
+      "tests": [
+        {
+          "in": [
+            "hello"
+          ],
+          "out": "olleh"
+        },
+        {
+          "in": [
+            ""
+          ],
+          "out": ""
+        },
+        {
+          "in": [
+            "a"
+          ],
+          "out": "a"
+        }
+      ],
+      "fnName": "reverseString"
+    },
+    {
+      "id": 1002,
+      "sublevel_id": 102,
+      "type": "coding",
+      "title": "isEven(n)",
+      "statement": "Напиши функцию isEven(n), которая возвращает true для чётных чисел.",
+      "examples": [
+        {
+          "in": [
+            2
+          ],
+          "out": true
+        },
+        {
+          "in": [
+            3
+          ],
+          "out": false
+        }
+      ],
+      "tests": [
+        {
+          "in": [
+            2
+          ],
+          "out": true
+        },
+        {
+          "in": [
+            3
+          ],
+          "out": false
+        },
+        {
+          "in": [
+            0
+          ],
+          "out": true
+        }
+      ],
+      "fnName": "isEven"
+    },
+    {
+      "id": 2001,
+      "sublevel_id": 201,
+      "type": "coding",
+      "title": "unique(arr)",
+      "statement": "Сделай функцию unique(arr), которая убирает повторяющиеся элементы из массива и возвращает отсортированный результат.",
+      "examples": [
+        {
+          "in": [
+            [
+              4,
+              2,
+              5,
+              2,
+              3,
+              4,
+              1
+            ]
+          ],
+          "out": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "tests": [
+        {
+          "in": [
+            [
+              4,
+              2,
+              5,
+              2,
+              3,
+              4,
+              1
+            ]
+          ],
+          "out": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "in": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "out": [
+            1
+          ]
+        },
+        {
+          "in": [
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "out": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "fnName": "unique"
+    },
+    {
+      "id": 3001,
+      "sublevel_id": 301,
+      "type": "coding",
+      "title": "groupBy(arr, key)",
+      "statement": "Сделай функцию groupBy(arr, key), которая группирует массив объектов по значению ключа.",
+      "examples": [],
+      "tests": [
+        {
+          "in": [
+            [
+              {
+                "name": "Anna",
+                "age": 20
+              },
+              {
+                "name": "Ivan",
+                "age": 25
+              },
+              {
+                "name": "Oleg",
+                "age": 20
+              }
+            ],
+            "age"
+          ],
+          "out": {
+            "20": [
+              {
+                "name": "Anna",
+                "age": 20
+              },
+              {
+                "name": "Oleg",
+                "age": 20
+              }
+            ],
+            "25": [
+              {
+                "name": "Ivan",
+                "age": 25
+              }
+            ]
+          }
+        }
+      ],
+      "fnName": "groupBy"
+    },
+    {
+      "id": 4001,
+      "sublevel_id": 401,
+      "type": "coding",
+      "title": "myPromiseAll(promises)",
+      "statement": "Сделай свою реализацию Promise.all — myPromiseAll(promises).",
+      "examples": [],
+      "tests": [
+        {
+          "async": true,
+          "in": "basic",
+          "out": "ok"
+        }
+      ],
+      "fnName": "myPromiseAll"
+    }
+  ],
+  "boss_tasks": [
+    {
+      "id": 9001,
+      "level_id": 11,
+      "title": "countVowels(str)",
+      "statement": "Напиши функцию countVowels(str), которая считает количество гласных букв в строке.",
+      "tests": [
+        {
+          "in": [
+            "hello"
+          ],
+          "out": 2
+        },
+        {
+          "in": [
+            "xyz"
+          ],
+          "out": 0
+        },
+        {
+          "in": [
+            "AEiou"
+          ],
+          "out": 5
+        }
+      ],
+      "fnName": "countVowels"
+    }
+  ]
+}
